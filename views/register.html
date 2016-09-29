@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Registration</h1>
+        </div>
+        <div class="col-sm-12">
+            <form ng-submit="register()" id="registration-form">
+                <div class="form-group col-sm-3">
+                    <label>UserName:</label>
+                    <div>
+                        <input type="text" ng-model="username" placeholder="Enter Your Username" minlength="4" maxlength="50" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label>Password:</label>
+                    <div>
+                        <input type="password" ng-model="password" placeholder="Enter Your Password" minlength="4" maxlength="50" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label>Password Confirm:</label>
+                    <div>
+                        <input type="password" ng-model="password2" placeholder="Please Confirm Your Password" minlength="4" maxlength="50" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label>Email:</label>
+                    <div>
+                        <input type="email" ng-model="email" placeholder="Enter Your Username" minlength="4" maxlength="50" class="form-control">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-danger">Register</button>
+            </form>
+        </div>
+    </div>
+</div>

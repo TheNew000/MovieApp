@@ -1,0 +1,21 @@
+body{
+	margin: 0px;
+}
+
+img {
+    max-height: 300px;
+}
+
+.caret {
+    // height:45px;
+    width:90px;
+    border-radius: 0 0 90px 90px;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+    // border-left: 50px solid transparent;
+    // border-right: 50px solid transparent;
+    border-top: 45px solid rgba(0, 0, 0, .9);
+    // background: black;
+    margin-left: auto;
+    margin-right: auto;
+}

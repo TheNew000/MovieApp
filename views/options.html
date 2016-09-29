@@ -1,0 +1,58 @@
+<div class="container-fluid options-body">
+    <div class="row">
+        <div class="col-sm-12 text-center" id="customize-header">
+            <h2>ORDER HERE!</h2>
+        </div>
+    </div>
+    <form ng-submit="optionsForm()">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 customize-divs">
+                <div class="col-sm-6">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <img src="css/images/calendar.png" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-sm-6 customize-div-text">
+                    <h4>1. Delivery Options</h4>
+                    <h6>The more often you order, the more you save!</h6>
+                    <select class="btn btn-default dropdown" ng-model="frequency" ng-options="frequencies for frequencies in frequencies">
+                        <option selected="selected"></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 customize-divs">
+                <div class="col-sm-6">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <img src="css/images/food-scale.png" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-sm-6 customize-div-text">
+                    <h4>2. Quantity</h4>
+                    <h6>How many pounds per week?  The minimum order is at least 1 but you can increment in quarters of a lb.</h6>
+                    <h6>$20.00/lb up to 20lbs, then options become cheaper!</h6>
+                    <input ng-model="quantity" id="quantity-input">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 customize-divs">
+                <div class="col-sm-6">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <img src="css/images/beans.png" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-sm-6 customize-div-text">
+                    <h4>3. Grind</h4>
+                    <h6>How fine do you want it?</h6>
+                    <select class="btn btn-default dropdown" ng-model="grindTypeThree" ng-options="grind.option for grind in grinds">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-default center-block submit-plan-button">SUBMIT</button>
+        </div>
+    </form>
+</div>

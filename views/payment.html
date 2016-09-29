@@ -1,0 +1,13 @@
+<form action="http://localhost:3000/stripe" method="POST">
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_h3HbD6hpWsvYsqfaFtI0SKkP"
+      data-amount="2000"
+      data-name="Demo Site"
+      data-description="2 widgets"
+      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+      data-locale="auto">
+    </script>
+</form>
+
+<button class="btn btn-default" ng-click="payOrder()" id="custom-button"></button>
